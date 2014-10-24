@@ -7,14 +7,16 @@ Plugin 'Lokaltog/vim-powerline'
 call vundle#end()
 filetype plugin indent on
 set nocompatible
-
+map <F5> :%! python ~/tidy_xml.py %<enter>
+map <F6> :%! python -m markdown %<enter>
 syntax on
 set encoding=utf-8
 set showcmd
 set helplang=En
 set showmatch
 set nrformats=hex
-
+"" backspace over everything
+set backspace=indent,eol,start
 "" look and feel
 set background=dark
 colorscheme badwolf
